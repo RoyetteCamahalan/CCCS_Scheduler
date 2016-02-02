@@ -1,0 +1,29 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.cccsscheduler.MainActivity">
+
+    <item
+        android:id="@+id/action_Notification"
+        android:icon="@drawable/ic_menu_notifications"
+        android:showAsAction="always"
+        android:title="@string/notification" />
+
+    <item
+        android:id="@+id/settings"
+        android:icon="@drawable/ic_settings"
+        android:showAsAction="always"
+        android:title="Settings">
+        <menu>
+            <item
+                android:id="@+id/action_profile"
+                android:orderInCategory="100"
+                android:showAsAction="never"
+                android:title="My Profile" />
+            <item
+                android:id="@+id/action_logout"
+                android:orderInCategory="100"
+                android:showAsAction="never"
+                android:title="@string/action_logout" />
+        </menu>
+    </item>
+</menu>

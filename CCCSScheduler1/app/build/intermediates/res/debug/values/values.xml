@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- From: file:/D:/Files/IT%20PROJECT/CCCSScheduler1/app/src/main/res/values/strings.xml -->
+    <eat-comment/>
+    <string-array name="arr_menus">
+        <item>Events</item>
+        <item>Notes</item>
+    </string-array>
+    <!-- From: file:/D:/Files/IT%20PROJECT/CCCSScheduler1/app/src/main/res/values/arrays.xml -->
+    <eat-comment/>
+    <string-array name="priority_dataset">
+        
+        <item name="low">@string/low</item>
+        <item name="normal">@string/normal</item>
+        <item name="high">@string/high</item>
+        
+    </string-array>
+    <!-- From: file:/D:/Files/IT%20PROJECT/CCCSScheduler1/app/src/main/res/values/styles.xml -->
+    <eat-comment/>
+    <color name="color">#01C26E</color>
+    <!-- From: file:/D:/Files/IT%20PROJECT/CCCSScheduler1/app/src/main/res/values/dimens.xml -->
+    <eat-comment/>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="navigation_drawer_width">240dp</dimen>
+    <!-- From: file:/D:/Files/IT%20PROJECT/CCCSScheduler1/app/src/main/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="Country">Country</string>
+    <string name="action_example">Example action</string>
+    <string name="action_logout">Logout</string>
+    <string name="action_settings">Settings</string>
+    <string name="add_group">Add Group</string>
+    <string name="add_group_event">Add Group Event</string>
+    <string name="address">Address</string>
+    <string name="alarm_desc">Details</string>
+    <string name="alarm_title">Alarm</string>
+    <string name="app_name">CCCS Scheduler</string>
+    <string name="ask_to_delete_event">Are you sure to delete this Event?</string>
+    <string name="barangay">Barangay</string>
+    <string name="bdate">Birthday</string>
+    <string name="cancel">Cancel</string>
+    <string name="conpass">Confirm Password</string>
+    <string name="contactno">Contact No</string>
+    <string name="created_by">Created By</string>
+    <string name="current_leader">Current Leader</string>
+    <string name="delete">Delete</string>
+    <string name="description">Description</string>
+    <string name="edit">Edit</string>
+    <string name="email">Email</string>
+    <string name="event_date">Date Deadline</string>
+    <string name="event_desc">Event Description</string>
+    <string name="event_name">Event Name</string>
+    <string name="event_time">Time Deadline</string>
+    <string name="events">Events</string>
+    <string name="female">Female</string>
+    <string name="fname">Firstname</string>
+    <string name="gender">Gender :</string>
+    <string name="group_desc">Group Description</string>
+    <string name="group_name">Group Name</string>
+    <string name="groups">Groups</string>
+    <string name="high">High</string>
+    <string name="houseno">House</string>
+    <string name="leader">Leader</string>
+    <string name="lname">Lastname </string>
+    <string name="low">Low</string>
+    <string name="male">Male</string>
+    <string name="menus">Menus</string>
+    <string name="mname">Middle Name</string>
+    <string name="municipal">Municipal/City</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="normal">Normal</string>
+    <string name="notes">Notes</string>
+    <string name="notification">Notification</string>
+    <string name="p_info">Personal Information</string>
+    <string name="pass">Password</string>
+    <string name="province">Province</string>
+    <string name="region">Region</string>
+    <string name="save">Save</string>
+    <string name="search">Search</string>
+    <string name="sign_in">Sign In</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="stop_alarm">Stop Alarm</string>
+    <string name="street">Street</string>
+    <string name="subcription">Subcriptions</string>
+    <string name="title_to_delete_event">Deleting Event</string>
+    <string name="uname">Username</string>
+    <string name="zip">Zip</string>
+    <!-- From: file:/D:/Files/IT%20PROJECT/CCCSScheduler1/app/src/main/res/values/styles.xml -->
+    <eat-comment/>
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+    <style name="AppTheme" parent="AppBaseTheme">
+        <item name="android:actionBarStyle">@style/MyActionBar</item>
+    </style>
+    <style name="LightTheme" parent="@android:style/Theme.Holo.Light">
+         <item name="android:actionBarStyle">@style/MyActionBar1</item>
+    </style>
+    <style name="MyActionBar" parent="@android:style/Widget.Holo.ActionBar">
+        <item name="android:background">#01C26E</item>
+    </style>
+    <style name="MyActionBar1" parent="@android:style/Widget.Holo.ActionBar">
+        <item name="android:background">#01C26E</item>
+    </style>
+</resources>

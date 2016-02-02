@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5DC"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".9"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/title_menus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/menus" />
+
+        <ListView
+            android:id="@+id/menu_listview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/title_groups"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/groups" />
+
+        <ListView
+            android:id="@+id/groups_listview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="vertical" 
+            android:listSelector="#8FBC8F">
+        </ListView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".1" >
+
+        <Button
+            android:id="@+id/txt_add_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic__add_group"
+            android:background="#01C26E"
+            android:text="@string/add_group"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+    </LinearLayout>
+
+</LinearLayout>

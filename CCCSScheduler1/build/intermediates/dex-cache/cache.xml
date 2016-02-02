@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="D:\Files\IT PROJECT\CCCSScheduler1\app\libs\additionnal.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="bd9e8dc422bb8c8405359947fe9f4282b49f57f4">
+        <dex dex="D:\Files\IT PROJECT\CCCSScheduler1\app\build\intermediates\pre-dexed\debug\additionnal-8da25e0c32388385a87e870c34c4bd7bce7f43f1.jar" />
+    </item>
+    <item
+        jar="D:\Files\IT PROJECT\CCCSScheduler1\app\libs\activation.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="d1257cbff6faa44c1f325ae0d9413522d4644383">
+        <dex dex="D:\Files\IT PROJECT\CCCSScheduler1\app\build\intermediates\pre-dexed\debug\activation-6b4d1161a349c5aa43f2cd858452e91f62a150e1.jar" />
+    </item>
+    <item
+        jar="D:\Files\IT PROJECT\CCCSScheduler1\app\libs\volley.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="d4aaa36e04ee71a83444f8367c97a46fda662d2c">
+        <dex dex="D:\Files\IT PROJECT\CCCSScheduler1\app\build\intermediates\pre-dexed\debug\volley-1575988c22cc3e5cc81f92d65bbc9dc00ee54779.jar" />
+    </item>
+    <item
+        jar="D:\INSTALLER\Android\Android-sdk-for-androidstudio\extras\android\m2repository\com\android\support\support-annotations\21.0.3\support-annotations-21.0.3.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="4b74cefe1f0c1b819e7260c8627a14674e37fd35">
+        <dex dex="D:\Files\IT PROJECT\CCCSScheduler1\app\build\intermediates\pre-dexed\debug\support-annotations-21.0.3-86e7d72d69ad1c116b66ca2c1fd15e546c9d81cb.jar" />
+    </item>
+    <item
+        jar="D:\Files\IT PROJECT\CCCSScheduler1\app\build\intermediates\exploded-aar\com.android.support\support-v4\21.0.3\jars\libs\internal_impl-21.0.3.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="01ec05bfbafcc07646ba813000bf2ef11742dd03">
+        <dex dex="D:\Files\IT PROJECT\CCCSScheduler1\app\build\intermediates\pre-dexed\debug\internal_impl-21.0.3-682817c1756545c65dca07c1ccde4bb65675ef43.jar" />
+    </item>
+    <item
+        jar="D:\Files\IT PROJECT\CCCSScheduler1\app\build\intermediates\exploded-aar\com.android.support\support-v4\21.0.3\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="2c91c949a45a21cdecf26e03951e46c7beec9ad8">
+        <dex dex="D:\Files\IT PROJECT\CCCSScheduler1\app\build\intermediates\pre-dexed\debug\classes-ed14fcab5891e728494822e09e22710c3fcce764.jar" />
+    </item>
+    <item
+        jar="D:\Files\IT PROJECT\CCCSScheduler1\app\libs\mail.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="428e267abff0d10802ccde86b915da2c20471160">
+        <dex dex="D:\Files\IT PROJECT\CCCSScheduler1\app\build\intermediates\pre-dexed\debug\mail-18fe1b3a818f851248a8286af60b60205fbbc22e.jar" />
+    </item>
+
+</items>

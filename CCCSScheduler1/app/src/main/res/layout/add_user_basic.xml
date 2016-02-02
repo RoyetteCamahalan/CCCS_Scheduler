@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+           <EditText
+                android:id="@+id/txt_uname"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:ems="10"
+                android:hint="@string/uname" />
+            <EditText
+                android:id="@+id/txt_email"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/txt_uname"
+                android:ems="10"
+                android:hint="@string/email" />
+
+            
+
+            <EditText
+                android:id="@+id/txt_pass"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/txt_email"
+                android:layout_marginTop="10dp"
+                android:ems="10"
+                android:hint="@string/pass"
+                android:inputType="textPassword" />
+
+            <EditText
+                android:id="@+id/txt_conpass"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/txt_pass"
+                android:layout_marginTop="10dp"
+                android:ems="10"
+                android:hint="@string/conpass"
+                android:inputType="textPassword" />
+
+           
+
+        </RelativeLayout>
+    </ScrollView>
+ <ImageButton
+        android:id="@+id/imgbtn_next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/ic_next" />
+
+</RelativeLayout>
