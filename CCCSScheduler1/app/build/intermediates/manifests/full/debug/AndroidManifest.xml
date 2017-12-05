@@ -33,13 +33,13 @@
             android:label="@string/sign_up" />
         <activity
             android:name="com.cccsscheduler.new_group"
-            android:icon="@drawable/ic_back"
-            android:label=""
+            android:icon="@drawable/ic_backcircle"
+            android:label="Create Group"
             android:theme="@style/LightTheme" />
         <activity
             android:name="com.cccsscheduler.New_Event"
-            android:icon="@drawable/ic_back"
-            android:label=""
+            android:icon="@drawable/ic_backcircle"
+            android:label="Add Event"
             android:theme="@style/LightTheme" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
@@ -60,14 +60,16 @@
         </activity>
         <activity
             android:name="com.cccsscheduler.New_Group_Event"
-            android:icon="@drawable/ic_back"
-            android:label=""
+            android:icon="@drawable/ic_backcircle"
+            android:label="Add Event"
             android:theme="@style/LightTheme" />
-        <activity android:name="com.cccsscheduler.alarm_activity" />
+        <activity
+            android:name="com.cccsscheduler.alarm_activity"
+            android:theme="@style/Theme.Transparent" />
         <activity
             android:name="com.cccsscheduler.AddMember"
-            android:icon="@drawable/ic_back"
-            android:label=""
+            android:icon="@drawable/ic_backcircle"
+            android:label="Add Member"
             android:theme="@style/LightTheme" >
             <meta-data
                 android:name="android.app.searchable"
@@ -75,12 +77,12 @@
         </activity>
         <activity
             android:name="com.cccsscheduler.forgot_pass"
-            android:icon="@drawable/ic_back"
+            android:icon="@drawable/ic_backcircle"
             android:label=""
             android:theme="@style/LightTheme" />
         <activity
             android:name="com.cccsscheduler.AddNote"
-            android:icon="@drawable/ic_back"
+            android:icon="@drawable/ic_backcircle"
             android:label=""
             android:theme="@style/LightTheme" />
 
@@ -88,12 +90,12 @@
 
         <activity
             android:name="com.cccsscheduler.UserProfile"
-            android:icon="@drawable/ic_back"
+            android:icon="@drawable/ic_backcircle"
             android:label=""
             android:theme="@style/LightTheme" />
         <activity
             android:name="com.cccsscheduler.MemberProfile"
-            android:icon="@drawable/ic_back"
+            android:icon="@drawable/ic_backcircle"
             android:label=""
             android:theme="@style/LightTheme" />
     </application>

@@ -4,7 +4,6 @@
     <string-array name="priority_dataset">
         
         <item name="low">@string/low</item>
-        <item name="normal">@string/normal</item>
         <item name="high">@string/high</item>
         
     </string-array>

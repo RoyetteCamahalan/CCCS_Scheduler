@@ -1,35 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- From: file:/D:/Files/IT%20PROJECT/CCCSScheduler1/app/src/main/res/values/strings.xml -->
+    <!-- From: file:/D:/My%20Files/Projects/cccs_scheduler/CCCSScheduler1/app/src/main/res/values/strings.xml -->
     <eat-comment/>
     <string-array name="arr_menus">
         <item>Events</item>
         <item>Notes</item>
     </string-array>
-    <!-- From: file:/D:/Files/IT%20PROJECT/CCCSScheduler1/app/src/main/res/values/arrays.xml -->
+    <!-- From: file:/D:/My%20Files/Projects/cccs_scheduler/CCCSScheduler1/app/src/main/res/values/arrays.xml -->
     <eat-comment/>
     <string-array name="priority_dataset">
         
         <item name="low">@string/low</item>
-        <item name="normal">@string/normal</item>
         <item name="high">@string/high</item>
         
     </string-array>
-    <!-- From: file:/D:/Files/IT%20PROJECT/CCCSScheduler1/app/src/main/res/values/styles.xml -->
+    <!-- From: file:/D:/My%20Files/Projects/cccs_scheduler/CCCSScheduler1/app/src/main/res/values/colors.xml -->
+    <eat-comment/>
+    <color name="ColorPrimary">#01C26E</color>
+    <!-- From: file:/D:/My%20Files/Projects/cccs_scheduler/CCCSScheduler1/app/src/main/res/values/styles.xml -->
     <eat-comment/>
     <color name="color">#01C26E</color>
-    <!-- From: file:/D:/Files/IT%20PROJECT/CCCSScheduler1/app/src/main/res/values/dimens.xml -->
+    <!-- From: file:/D:/My%20Files/Projects/cccs_scheduler/CCCSScheduler1/app/src/main/res/values/dimens.xml -->
     <eat-comment/>
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
     <dimen name="navigation_drawer_width">240dp</dimen>
-    <!-- From: file:/D:/Files/IT%20PROJECT/CCCSScheduler1/app/src/main/res/values/strings.xml -->
+    <!-- From: file:/D:/My%20Files/Projects/cccs_scheduler/CCCSScheduler1/app/src/main/res/values/strings.xml -->
     <eat-comment/>
     <string name="Country">Country</string>
     <string name="action_example">Example action</string>
     <string name="action_logout">Logout</string>
     <string name="action_settings">Settings</string>
-    <string name="add_group">Add Group</string>
+    <string name="add_group">Create Group</string>
     <string name="add_group_event">Add Group Event</string>
     <string name="address">Address</string>
     <string name="alarm_desc">Details</string>
@@ -86,7 +88,7 @@
     <string name="title_to_delete_event">Deleting Event</string>
     <string name="uname">Username</string>
     <string name="zip">Zip</string>
-    <!-- From: file:/D:/Files/IT%20PROJECT/CCCSScheduler1/app/src/main/res/values/styles.xml -->
+    <!-- From: file:/D:/My%20Files/Projects/cccs_scheduler/CCCSScheduler1/app/src/main/res/values/styles.xml -->
     <eat-comment/>
     <style name="AppBaseTheme" parent="android:Theme.Light">
         <!--
@@ -106,5 +108,13 @@
     </style>
     <style name="MyActionBar1" parent="@android:style/Widget.Holo.ActionBar">
         <item name="android:background">#01C26E</item>
+    </style>
+    <style name="Theme.Transparent" parent="android:Theme">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:backgroundDimEnabled">false</item>
     </style>
 </resources>

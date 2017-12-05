@@ -319,7 +319,7 @@ public class New_Group_Event extends Activity implements OnClickListener, OnDate
                             Calendar cal2=Calendar.getInstance();
                             cal2.set(Calendar.MINUTE,cal.MINUTE-1);
                             if (cal.getTimeInMillis() < cal2.getTimeInMillis()){
-                                if(prio==3){
+                                if(prio==2){
                                     Intent intent = new Intent(getApplicationContext(), alarm_activity.class);
                                     intent.putExtra("name", str_name);
                                     intent.putExtra("desc", str_desc);

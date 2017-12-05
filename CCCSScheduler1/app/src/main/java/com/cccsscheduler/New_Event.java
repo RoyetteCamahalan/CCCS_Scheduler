@@ -386,7 +386,7 @@ public class New_Event extends Activity implements OnClickListener, OnTimeSetLis
     }
 
     private void setalarm() {
-            if (prio == 3) {
+            if (prio == 2) {
 
                 Intent intent = new Intent(this, alarm_activity.class);
                 intent.putExtra("name", str_name);

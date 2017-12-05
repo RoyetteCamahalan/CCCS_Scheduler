@@ -93,8 +93,8 @@ public class Notification_custom extends BaseAdapter{
 			//assign the data to the layout
 			holder.txt_notifinfo = (TextView) convertView.findViewById(R.id.txt_notifinfo);
 			holder.txt_time_date = (TextView) convertView.findViewById(R.id.txt_time);
-			holder.btn_accept = (Button) convertView.findViewById(R.id.btn_accept);
-			holder.btn_decline = (Button) convertView.findViewById(R.id.btn_decline);
+			holder.btn_accept = (TextView) convertView.findViewById(R.id.btn_accept);
+			holder.btn_decline = (TextView) convertView.findViewById(R.id.btn_decline);
 			convertView.setTag(holder);
 		} else {
 
@@ -156,10 +156,10 @@ public class Notification_custom extends BaseAdapter{
 			public void onClick(View v) {
 				// TODO Auto-generated method stub
 
-				final Button accept=(Button) v;
+				final TextView accept=(TextView) v;
 
 				View parentRow = (View) v.getParent();
-				final Button decline=(Button) parentRow.findViewById(R.id.btn_decline);
+				final TextView decline=(TextView) parentRow.findViewById(R.id.btn_decline);
 				View parentrow2=(View) parentRow.getParent();
 				View relativelayout1=(View)parentrow2.findViewById(R.id.rel1);
 				final TextView notifinfo=(TextView) relativelayout1.findViewById(R.id.txt_notifinfo);
@@ -246,7 +246,7 @@ public class Notification_custom extends BaseAdapter{
                                                 String updated_at=jobj1.getString("updated_at");
                                                 int priority=Integer.valueOf(jobj1.getString("priority"));
                                                 int status=Integer.valueOf(jobj1.getString("status"));
-                                                String arr[]=date_time.split(" ");
+                                                String arr[]=date_time.split(" w");
                                                 String date=arr[0];
                                                 String time=arr[1];
                                                 String arrtime[]=time.split(":");
@@ -299,9 +299,9 @@ public class Notification_custom extends BaseAdapter{
         holder.btn_decline.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View v) {
-                final Button decline=(Button) v;
+                final TextView decline=(TextView) v;
                 View parentRow = (View) v.getParent();
-                final Button accept=(Button) parentRow.findViewById(R.id.btn_accept);
+                final TextView accept=(TextView) parentRow.findViewById(R.id.btn_accept);
                 View parentrow2=(View) parentRow.getParent();
                 View relativelayout1=(View)parentrow2.findViewById(R.id.rel1);
                 final TextView notifinfo=(TextView) relativelayout1.findViewById(R.id.txt_notifinfo);
@@ -358,8 +358,8 @@ public class Notification_custom extends BaseAdapter{
 	public static class ViewHolder {
 		public TextView txt_notifinfo;
 		public TextView txt_time_date;
-		public Button btn_accept;
-		public Button btn_decline;
+		public TextView btn_accept;
+		public TextView btn_decline;
 	}
     private void managepost(final int event_id, final int actiontype){
         String tag_string_req = "req_register";

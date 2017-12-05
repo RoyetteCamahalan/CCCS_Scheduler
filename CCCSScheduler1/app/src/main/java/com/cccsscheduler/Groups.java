@@ -4,16 +4,19 @@ import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
+import android.support.v4.app.FragmentStatePagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TabHost;
 
-public class Groups extends Fragment {
+public class Groups extends Fragment implements ViewPager.OnPageChangeListener, TabHost.OnTabChangeListener {
 	public int group_id=-1;
     int leader_id=-1;
-    FragmentPagerAdapter adapterViewPager;
+    private ViewPager viewPager;
+    private MyPagerAdapter pagerAdapter;
+    private TabHost mTabHost;
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,
 			Bundle savedInstanceState) {
@@ -22,16 +25,59 @@ public class Groups extends Fragment {
 
 		View mRoot=inflater.inflate(R.layout.groups_layout, container,false);
         DBHelper helper=new DBHelper(getActivity());
-        leader_id=helper.getGroupLeader(group_id);
-        ViewPager vpPager = (ViewPager) mRoot.findViewById(R.id.vpPager);
-        adapterViewPager = new MyPagerAdapter(getChildFragmentManager(),group_id,leader_id);
-        vpPager.setAdapter(adapterViewPager);
 
+        mTabHost = (TabHost) mRoot.findViewById(android.R.id.tabhost);
+        mTabHost.setup();
+
+        leader_id=helper.getGroupLeader(group_id);
+        viewPager= (ViewPager) mTabHost.findViewById(R.id.viewpager);
+        pagerAdapter = new MyPagerAdapter(getChildFragmentManager(),group_id,leader_id);
+        viewPager.setAdapter(pagerAdapter);
+
+        mTabHost.addTab(mTabHost.newTabSpec("Events").setIndicator("Events").setContent(R.id.viewpager));
+        mTabHost.addTab(mTabHost.newTabSpec("Members").setIndicator("Members").setContent(R.id.viewpager));
+        mTabHost.addTab(mTabHost.newTabSpec("About").setIndicator("About").setContent(R.id.viewpager));
+
+        viewPager.setOnPageChangeListener(this);
+        mTabHost.setOnTabChangedListener(this);
+        mTabHost.setCurrentTab(1);
+        mTabHost.setCurrentTab(0);
+        viewPager.setCurrentItem(0);
 
 		return mRoot;
 
 	}
-    public static class MyPagerAdapter extends FragmentPagerAdapter {
+
+    @Override
+    public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
+
+    }
+
+    @Override
+    public void onPageSelected(int position) {
+        mTabHost.setCurrentTab(position);
+    }
+
+    @Override
+    public void onPageScrollStateChanged(int state) {
+
+    }
+
+    @Override
+    public void onTabChanged(String tabId) {
+        switch (tabId){
+            case "Events":
+                viewPager.setCurrentItem(0);
+                break;
+            case "Members":
+                viewPager.setCurrentItem(1);
+                break;
+            case "About":
+                viewPager.setCurrentItem(3);
+        }
+    }
+
+    public static class MyPagerAdapter extends FragmentStatePagerAdapter {
         private static int NUM_ITEMS = 3;
         int leader_id=-1;
         int group_id=-1;
@@ -60,19 +106,6 @@ public class Groups extends Fragment {
                 default:
                     return null;
             }
-        }
-        // Returns the page title for the top indicator
-        @Override
-        public CharSequence getPageTitle(int position) {
-            switch (position){
-                case 0:
-                    return "Group Events";
-                case 1:
-                    return "Group Members";
-                case 2:
-                    return "About";
-            }
-            return "Page ";
         }
 
     }

@@ -15,7 +15,10 @@
             android:id="@+id/title_menus"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/menus" />
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp"
+            android:text="@string/menus"
+            android:textSize="16dip"/>
 
         <ListView
             android:id="@+id/menu_listview"
@@ -26,7 +29,10 @@
             android:id="@+id/title_groups"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/groups" />
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp"
+            android:text="@string/groups"
+            android:textSize="16dip" />
 
         <ListView
             android:id="@+id/groups_listview"

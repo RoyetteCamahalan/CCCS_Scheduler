@@ -22,7 +22,7 @@ import java.util.HashMap;
 public class UserProfile extends Activity {
 
     ImageView userpicture;
-    TextView Name, Fname, Mname, Lname, Gender, Bdate, City, ContactNumber, EmailAddress, Username, Password;
+    TextView Name, Fname, Mname, Lname, Gender, Bdate, City, ContactNumber, EmailAddress, Username;
     Button Changepass;
 
     DBHelper dbHelper;
@@ -46,7 +46,6 @@ public class UserProfile extends Activity {
         ContactNumber = (TextView) findViewById(R.id.txt_contact_number);
         EmailAddress = (TextView) findViewById(R.id.txt_email_address);
         Username = (TextView) findViewById(R.id.txt_username);
-        Password = (TextView) findViewById(R.id.txt_password);
         SharedPreferences sharedPreferences = getSharedPreferences(login.USERPREFERENCES, Context.MODE_PRIVATE);
         sharedPreferences = getSharedPreferences(login.USERPREFERENCES, Context.MODE_PRIVATE);
         int user_id = sharedPreferences.getInt(login.USERPREFID, 0);
@@ -64,7 +63,6 @@ public class UserProfile extends Activity {
         ContactNumber.setText(user.get(0).get("USERS_CONTACT"));
         EmailAddress.setText(user.get(0).get("USERS_EMAIL"));
         Username.setText(user.get(0).get("USERS_UNAME"));
-        Password.setText(user.get(0).get("USERS_PASSWORD"));
         getActionBar().setHomeButtonEnabled(true);
     }
 

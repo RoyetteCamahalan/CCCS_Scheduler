@@ -9,12 +9,17 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_weight="0.70"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:layout_gravity="center_vertical">
 
         <TextView
             android:id="@+id/txt_notifinfo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textColor="#040404"
+            android:textSize="15dip"
+            android:textStyle="bold"
+            android:typeface="sans"
             android:layout_marginLeft="10dp"
             android:layout_marginTop="10dp"
             android:inputType="textMultiLine"
@@ -46,6 +51,7 @@
                 android:layout_marginTop="3dp"
                 android:layout_toRightOf="@+id/img_notificon"
                 android:text="Time"
+                android:textColor="#040404"
                 android:textAppearance="?android:attr/textAppearanceSmall" />
         </LinearLayout>
 
@@ -53,23 +59,44 @@
 
     <LinearLayout
         android:layout_width="0dp"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:layout_weight="0.30"
         android:orientation="vertical"
-        android:gravity="center">
-        <Button
+        android:layout_centerInParent="true"
+        android:layout_alignParentRight="true"
+        android:id="@+id/linearacceptdecline"
+        android:gravity="center_horizontal"
+        android:layout_margin="4dp">
+        <TextView
             android:id="@+id/btn_accept"
-            style="?android:attr/buttonStyleSmall"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:textColor="@android:color/white"
+            android:background="@drawable/accept_bg"
+            android:layout_marginTop="2dp"
+            android:maxLines="2"
+            android:paddingLeft="2dp"
+            android:paddingRight="2dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:gravity="center"
             android:text="Accept" />
 
-        <Button
+        <TextView
             android:id="@+id/btn_decline"
-            style="?android:attr/buttonStyleSmall"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Decline" />
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="Decline"
+            android:textColor="#040404"
+            android:background="@drawable/decline_bg"
+            android:gravity="center"
+            android:paddingLeft="2dp"
+            android:paddingRight="2dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:layout_marginTop="2dp"/>
         </LinearLayout>
 
 

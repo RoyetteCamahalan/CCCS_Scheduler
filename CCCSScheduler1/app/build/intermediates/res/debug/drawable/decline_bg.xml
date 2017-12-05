@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <gradient
+        android:startColor="#E0E0E0"
+        android:centerColor="#BDBDBD"
+        android:endColor="#9E9E9E"
+        android:gradientRadius="100"
+        android:angle="270" />
+    <corners
+        android:bottomLeftRadius="5dp"
+        android:bottomRightRadius="5dp"
+        android:topLeftRadius="5dp"
+        android:topRightRadius="5dp"/>
+</shape><!-- From: file:/D:/My%20Files/Projects/cccs_scheduler/CCCSScheduler1/app/src/main/res/drawable/decline_bg.xml -->
